@@ -4,9 +4,10 @@
 	<title>Simple page</title>
 </head>
 <body>
+    <script src="/sources/main.js"></script>
 	<?php
-		123
-		
+        
+	    	
 
 	?>
 		
