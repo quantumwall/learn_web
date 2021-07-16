@@ -2,29 +2,52 @@
 <html>
 <head>
 	<title>Simple page</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            margin: 20px;
-            width: 50%;
-        }
-        table, th, td {
-            border: 1px solid gray;
-            padding: 5px;
-        }
-    </style>
 </head>
 <body>
     <!--<script src="/sources/main.js"></script>-->
 	<?php
-<<<<<<< HEAD
 		
+		class Entree {
+			private $name;
+			protected $ingridients;
 
+			public function __construct($name, $ingridients) {
+				if (! is_array) {
+					throw new Exception('$ingridients must be an array');
+				}
+				$this->name = $name;
+				$this->ingridients = $ingridients;
+			}
 
-=======
-        require 'sources/function.php';
->>>>>>> f388c5d111d834220a7cde2485ce13228368427f
+			public function hasIngridient($ingridient) {
+				return in_array($ingridient, $this->ingridients);
+			}
+		}
+
+		class Ingridient {
+			public function __construct($name, $price) {
+				$this->name = $name;
+				$this->price = $price;
+			}
+
+			public function change_price($price) {
+				$this->price = $price;
+			}
+
+			public function info() {
+				print "$this->name - \$$this->price<br>\n";
+			}
+
+		}
+
+		class Meal extends Ingridient {
+			public function __construct($name, $ingridients)
+
+		$tomate = new Ingridient("Tomato", 3.45);
+		$tomate->info();
+		$tomate->change_price(5.45);
+		$tomate->info();
+
 	?>
-    <div><?php image("pelican.jpg", "", "", "400px"); ?></div>
 </body>
 </html>
