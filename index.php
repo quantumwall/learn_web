@@ -4,8 +4,8 @@
 	<title>Simple page</title>
 </head>
 <body>
-    <!--<script src="/sources/main.js"></script>-->
-	<?php
+    <script src="/sources/main.js"></script>
+	<!--<?php
         
         print <<<HTML
         <form action="{$_SERVER['PHP_SELF']}" method="post">
@@ -26,7 +26,7 @@ HTML;
         }
             
     print_r($_POST);
-	?>
+	?>-->
     
 
 </body>
