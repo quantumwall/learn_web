@@ -1,3 +1,4 @@
+'use strict';
 /*let js_name = "ECMAScript";
 result = prompt("Название JavaScript?");
 if (result = "ECMAScript") {
@@ -65,15 +66,6 @@ alert(`The sum is ${sum}`);
 }
 */
 
-function pow(x, n) {
-	if (n == 0) {
-		return 0;
-	}
-	let result = x;
-	for (let count = 0; count < n - 1; count++) {
-		result *= x;
-	}
-	return result;
+for (let i = 0; i < 5; i++) {
+	console.log(`value is ${i}`);
 }
-let res = pow(2, 2);
-alert(res);
