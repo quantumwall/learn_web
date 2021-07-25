@@ -7,8 +7,10 @@
     <!--<script src="/sources/main.js"></script>-->
 	<?php
         
-		int function f1(string $name, integer		
-    
+        $home_dir = "/home/rico/";
+        $list_dir = `ls -la $home_dir`;
+        print "<pre>$list_dir</pre>";
+
 	?>
 </body>
 </html>
