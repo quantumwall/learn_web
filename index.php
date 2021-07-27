@@ -1,16 +1,13 @@
-<!doctype html>
-<html>
-<head>
-	<title>Simple page</title>
-</head>
-<body>
-    <!--<script src="/sources/main.js"></script>-->
-	<?php
-        
-        $home_dir = "/home/rico/";
-        $list_dir = `ls -la $home_dir`;
-        print "<pre>$list_dir</pre>";
+<?php
+    require_once "sources/html_tpl.php";
+    head_html("Home page");
+    
+    function myecho (...$arguments) {
+        foreach ($arguments as $argument) {
+            echo "$argument\n<br>";
+        }
+    }
 
-	?>
-</body>
-</html>
+    myecho(...[1,2,3,4,5,'sting']);
+
+    end_html();
