@@ -21,4 +21,9 @@
         $blue = dechex($blue);
         print "#" . $red . $green . $blue;
     }
+    function myprint(...$args) {
+        foreach ($args as $arg) {
+            print "$arg<br>\n";
+        }
+    }
 ?>
