@@ -21,9 +21,18 @@
         $blue = dechex($blue);
         print "#" . $red . $green . $blue;
     }
+ //   function myprint(...$args) {
+ //       foreach ($args as $arg) {
+ //           print "$arg<br>\n";
+ //       }
+ //   }
     function myprint(...$args) {
         foreach ($args as $arg) {
-            print "$arg<br>\n";
-        }
-    }
+			if (gettype($arg) == 'array') {
+				print "array entry";
+				myprint($arg);
+        	} else {
+
+		}
+ 
 ?>
