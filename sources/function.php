@@ -26,6 +26,12 @@
             print "$arg<br>\n";
         }
     }
+
+	function myprintr ($obj) {
+		print "<pre>";
+		print_r($obj);
+		print "</pre>";
+	}
     
  
 ?>
