@@ -57,14 +57,5 @@
     myprintr($dir_content);
 
 
-
-
-
-
-
-
-
-
-
     end_html();
 ?>
